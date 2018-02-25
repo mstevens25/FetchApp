@@ -28,13 +28,13 @@ public class GUI_Main extends javax.swing.JFrame {
     private void initComponents() {
 
         popupMenu1 = new java.awt.PopupMenu();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        lblUsername = new javax.swing.JLabel();
+        lblTitle = new javax.swing.JLabel();
+        txtUsername = new javax.swing.JTextField();
+        lblPassword = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JButton();
+        btnCancel = new javax.swing.JButton();
+        pwtxtPassword = new javax.swing.JPasswordField();
 
         popupMenu1.setLabel("popupMenu1");
 
@@ -45,39 +45,46 @@ public class GUI_Main extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(1600, 900));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Username:");
-        jLabel1.setToolTipText("");
-        jLabel1.setName("lblUsername"); // NOI18N
+        lblUsername.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblUsername.setText("Username:");
+        lblUsername.setToolTipText("");
+        lblUsername.setName("lblUsername"); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Imprint MT Shadow", 1, 48)); // NOI18N
-        jLabel2.setText("Fetch Mobile Grooming");
+        lblTitle.setFont(new java.awt.Font("Kristen ITC", 1, 48)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(0, 153, 0));
+        lblTitle.setText("Fetch Mobile Grooming");
 
-        jTextField1.setText(" email");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtUsername.setText(" email");
+        txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtUsernameActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel3.setText("Password:");
-        jLabel3.setToolTipText("");
-        jLabel3.setName("lblPassword"); // NOI18N
+        lblPassword.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lblPassword.setText("Password:");
+        lblPassword.setToolTipText("");
+        lblPassword.setName("lblPassword"); // NOI18N
 
-        jButton1.setText("Login");
-        jButton1.setName("btnLogin"); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnLogin.setText("Login");
+        btnLogin.setName("btnLogin"); // NOI18N
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnLoginActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Cancel");
-        jButton2.setName("btnCancel"); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnCancel.setText("Cancel");
+        btnCancel.setName("btnCancel"); // NOI18N
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnCancelActionPerformed(evt);
+            }
+        });
+
+        pwtxtPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pwtxtPasswordActionPerformed(evt);
             }
         });
 
@@ -88,58 +95,62 @@ public class GUI_Main extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(278, 278, 278)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1))
+                            .addComponent(lblPassword)
+                            .addComponent(lblUsername))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
-                            .addComponent(jTextField2)))
+                            .addComponent(txtUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
+                            .addComponent(pwtxtPassword)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(379, 379, 379)
-                        .addComponent(jButton1)
+                        .addComponent(btnLogin)
                         .addGap(56, 56, 56)
-                        .addComponent(jButton2)))
-                .addContainerGap(459, Short.MAX_VALUE))
+                        .addComponent(btnCancel))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(169, 169, 169)
+                        .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 631, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(400, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(55, 55, 55)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1))
+                    .addComponent(lblUsername, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtUsername))
                 .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pwtxtPassword))
+                .addGap(66, 66, 66)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnLogin)
+                    .addComponent(btnCancel))
                 .addContainerGap(209, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtUsernameActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnLoginActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jTextField1.setText(" email");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        txtUsername.setText(" email");
+    }//GEN-LAST:event_btnCancelActionPerformed
+
+    private void pwtxtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwtxtPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pwtxtPasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,13 +188,13 @@ public class GUI_Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton btnCancel;
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel lblPassword;
+    private javax.swing.JLabel lblTitle;
+    private javax.swing.JLabel lblUsername;
     private java.awt.PopupMenu popupMenu1;
+    private javax.swing.JPasswordField pwtxtPassword;
+    private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
 }
