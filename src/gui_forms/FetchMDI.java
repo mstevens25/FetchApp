@@ -96,6 +96,16 @@ public class FetchMDI extends javax.swing.JFrame {
 
         txtUsername.setBackground(new java.awt.Color(204, 204, 204));
         txtUsername.setText("    Email");
+        txtUsername.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtUsernameMouseClicked(evt);
+            }
+        });
+        txtUsername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsernameActionPerformed(evt);
+            }
+        });
         desktopPane.add(txtUsername);
         txtUsername.setBounds(260, 200, 340, 30);
 
@@ -201,6 +211,14 @@ public class FetchMDI extends javax.swing.JFrame {
         txtUsername.setText("    Email");
         pwtxtPassword.setText("");
     }//GEN-LAST:event_btnResetActionPerformed
+
+    private void txtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsernameActionPerformed
+        
+    }//GEN-LAST:event_txtUsernameActionPerformed
+
+    private void txtUsernameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsernameMouseClicked
+        txtUsername.setText("");
+    }//GEN-LAST:event_txtUsernameMouseClicked
 
     /**
      * @param args the command line arguments
