@@ -117,7 +117,29 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
         lblZip_A.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         lblZip_A.setText("ZIP:");
 
+        txtFirstName_A.setFocusCycleRoot(true);
+        txtFirstName_A.setNextFocusableComponent(txtMInitial_A);
+
+        txtMInitial_A.setNextFocusableComponent(txtLastName_A);
+
+        txtLastName_A.setNextFocusableComponent(txtAddress1_A);
+
+        txtAddress1_A.setNextFocusableComponent(txtAddress2_A);
+
+        txtAddress2_A.setNextFocusableComponent(txtCity_A);
+
+        txtCity_A.setNextFocusableComponent(txtState_A);
+
+        txtState_A.setNextFocusableComponent(txtZip_A);
+
+        txtZip_A.setNextFocusableComponent(txtEmail_A);
+
+        txtEmail_A.setNextFocusableComponent(txtPassword_A);
+
+        txtPassword_A.setNextFocusableComponent(txtPhone_A);
+
         btnSubmit_A.setText("Submit");
+        btnSubmit_A.setNextFocusableComponent(btnReset_A);
         btnSubmit_A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmit_AActionPerformed(evt);
@@ -125,9 +147,20 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
         });
 
         btnReset_A.setText("Reset");
+        btnReset_A.setNextFocusableComponent(txtFirstName_A);
+        btnReset_A.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnReset_AMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnReset_AMousePressed(evt);
+            }
+        });
 
         lblPhone_A.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         lblPhone_A.setText("PHONE:");
+
+        txtPhone_A.setNextFocusableComponent(btnSubmit_A);
 
         javax.swing.GroupLayout jPanel_ALayout = new javax.swing.GroupLayout(jPanel_A);
         jPanel_A.setLayout(jPanel_ALayout);
@@ -388,6 +421,34 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
     private void btnSubmit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmit2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSubmit2ActionPerformed
+
+    private void btnReset_AMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReset_AMouseClicked
+        txtFirstName_A.setText("");
+        txtMInitial_A.setText("");
+        txtLastName_A.setText("");
+        txtAddress1_A.setText("");
+        txtAddress2_A.setText("");
+        txtCity_A.setText("");
+        txtState_A.setText("");
+        txtZip_A.setText("");
+        txtEmail_A.setText("");
+        txtPassword_A.setText("");
+        txtPhone_A.setText("");
+    }//GEN-LAST:event_btnReset_AMouseClicked
+
+    private void btnReset_AMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReset_AMousePressed
+        txtFirstName_A.setText("");
+        txtMInitial_A.setText("");
+        txtLastName_A.setText("");
+        txtAddress1_A.setText("");
+        txtAddress2_A.setText("");
+        txtCity_A.setText("");
+        txtState_A.setText("");
+        txtZip_A.setText("");
+        txtEmail_A.setText("");
+        txtPassword_A.setText("");
+        txtPhone_A.setText("");
+    }//GEN-LAST:event_btnReset_AMousePressed
 
     /**
      * @param args the command line arguments

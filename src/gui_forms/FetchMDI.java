@@ -100,6 +100,9 @@ public class FetchMDI extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtUsernameMouseClicked(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtUsernameMousePressed(evt);
+            }
         });
         txtUsername.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,11 +117,19 @@ public class FetchMDI extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnLoginMouseClicked(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnLoginMousePressed(evt);
+            }
         });
         desktopPane.add(btnLogin);
         btnLogin.setBounds(210, 330, 100, 40);
 
         btnReset.setText("Reset");
+        btnReset.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnResetMousePressed(evt);
+            }
+        });
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnResetActionPerformed(evt);
@@ -227,8 +238,20 @@ public class FetchMDI extends javax.swing.JFrame {
 
     private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
         new CustomerServiceFrame().setVisible(true);
-        //this.dispose();
     }//GEN-LAST:event_btnLoginMouseClicked
+
+    private void btnResetMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMousePressed
+        txtUsername.setText("    Email");
+        pwtxtPassword.setText("");
+    }//GEN-LAST:event_btnResetMousePressed
+
+    private void btnLoginMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMousePressed
+        new CustomerServiceFrame().setVisible(true);
+    }//GEN-LAST:event_btnLoginMousePressed
+
+    private void txtUsernameMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsernameMousePressed
+        txtUsername.setText("");
+    }//GEN-LAST:event_txtUsernameMousePressed
 
     /**
      * @param args the command line arguments
