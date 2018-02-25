@@ -110,6 +110,11 @@ public class FetchMDI extends javax.swing.JFrame {
         txtUsername.setBounds(260, 200, 340, 30);
 
         btnLogin.setText("Login");
+        btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnLoginMouseClicked(evt);
+            }
+        });
         desktopPane.add(btnLogin);
         btnLogin.setBounds(210, 330, 100, 40);
 
@@ -219,6 +224,11 @@ public class FetchMDI extends javax.swing.JFrame {
     private void txtUsernameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsernameMouseClicked
         txtUsername.setText("");
     }//GEN-LAST:event_txtUsernameMouseClicked
+
+    private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
+        new CustomerServiceFrame().setVisible(true);
+        //this.dispose();
+    }//GEN-LAST:event_btnLoginMouseClicked
 
     /**
      * @param args the command line arguments
