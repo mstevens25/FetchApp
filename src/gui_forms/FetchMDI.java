@@ -56,7 +56,7 @@ public class FetchMDI extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(1600, 900));
 
-        lblTitle.setFont(new java.awt.Font("Tempus Sans ITC", 1, 48)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(51, 153, 0));
         lblTitle.setText("Fetch Mobile Grooming");
         desktopPane.add(lblTitle);
@@ -92,16 +92,16 @@ public class FetchMDI extends javax.swing.JFrame {
             }
         });
         desktopPane.add(pwtxtPassword);
-        pwtxtPassword.setBounds(260, 240, 190, 30);
+        pwtxtPassword.setBounds(260, 240, 340, 30);
 
         txtUsername.setBackground(new java.awt.Color(204, 204, 204));
         txtUsername.setText("    Email");
         desktopPane.add(txtUsername);
-        txtUsername.setBounds(260, 200, 190, 30);
+        txtUsername.setBounds(260, 200, 340, 30);
 
         btnLogin.setText("Login");
         desktopPane.add(btnLogin);
-        btnLogin.setBounds(210, 330, 57, 23);
+        btnLogin.setBounds(210, 330, 100, 40);
 
         btnReset.setText("Reset");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +110,7 @@ public class FetchMDI extends javax.swing.JFrame {
             }
         });
         desktopPane.add(btnReset);
-        btnReset.setBounds(340, 330, 61, 23);
+        btnReset.setBounds(350, 330, 100, 40);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -198,7 +198,8 @@ public class FetchMDI extends javax.swing.JFrame {
     }//GEN-LAST:event_pwtxtPasswordActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
-        // TODO add your handling code here:
+        txtUsername.setText("    Email");
+        pwtxtPassword.setText("");
     }//GEN-LAST:event_btnResetActionPerformed
 
     /**
