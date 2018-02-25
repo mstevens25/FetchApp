@@ -36,7 +36,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" pref="531" max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -51,7 +51,12 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel2">
+        <Container class="javax.swing.JPanel" name="jPanel_A">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="ADD CUSTOMER">
@@ -63,263 +68,244 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="1133" max="32767" attributes="0"/>
-                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblZip_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblState_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCity_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAddress2_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAddress1_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMInitial_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFirstName_A" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLastName_A" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtState_A" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtMInitial_A" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="txtLastName_A" max="32767" attributes="0"/>
+                                  <Component id="txtAddress1_A" max="32767" attributes="0"/>
+                                  <Component id="txtAddress2_A" max="32767" attributes="0"/>
+                                  <Component id="txtCity_A" pref="231" max="32767" attributes="0"/>
+                                  <Component id="txtFirstName_A" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="197" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="lblPassword_A" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblEmail_A" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblPhone_A" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="txtEmail_A" max="32767" attributes="0"/>
+                                          <Component id="txtPassword_A" pref="231" max="32767" attributes="0"/>
+                                          <Component id="txtPhone_A" alignment="0" min="-2" pref="126" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="btnSubmit_A" min="-2" pref="118" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Component id="btnReset_A" min="-2" pref="118" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="txtZip_A" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="192" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="506" max="32767" attributes="0"/>
-                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblFirstName_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEmail_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFirstName_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEmail_A" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblMInitial_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPassword_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMInitial_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPassword_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblLastName_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtLastName_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblPhone_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPhone_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblAddress1_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAddress1_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblAddress2_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAddress2_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblCity_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCity_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSubmit_A" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="btnReset_A" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblState_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtState_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblZip_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtZip_A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="89" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="jPanel3">
+            <Component class="javax.swing.JLabel" name="lblFirstName_A">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
                 </Property>
+                <Property name="text" type="java.lang.String" value="FIRST NAME:"/>
               </Properties>
-
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="lblZip1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblState1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblCity1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAddress4" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAddress3" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblMInitial1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblFirstName1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblLastName1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtState1" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txtMInitial1" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="txtLastName1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtAddress3" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtAddress4" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtCity1" alignment="0" pref="231" max="32767" attributes="0"/>
-                                      <Component id="txtFirstName1" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="197" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="lblPassword1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblEmail1" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="txtEmail1" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="txtPassword1" alignment="0" pref="231" max="32767" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="btnSubmit1" min="-2" pref="118" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                          <Component id="btnReset1" min="-2" pref="118" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                              <Component id="txtZip1" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="192" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblFirstName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblEmail1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtFirstName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtEmail1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblMInitial1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblPassword1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtMInitial1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtPassword1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblLastName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtLastName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblAddress3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtAddress3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblAddress4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtAddress4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblCity1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtCity1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnSubmit1" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                              <Component id="btnReset1" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblState1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtState1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblZip1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtZip1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="104" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JLabel" name="lblFirstName1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="FIRST NAME:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblLastName1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="LAST NAME:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblMInitial1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="MIDDLE INITIAL:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblEmail1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="EMAIL:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblPassword1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="PASSWORD:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblAddress3">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="ADDRESS 1:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblAddress4">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="ADDRESS 2:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblCity1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="CITY:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblState1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="STATE:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblZip1">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Times New Roman" size="14" style="0"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="ZIP:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtFirstName1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtMInitial1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtLastName1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtAddress3">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtAddress4">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtCity1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtState1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtZip1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtEmail1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtPassword1">
-                </Component>
-                <Component class="javax.swing.JButton" name="btnSubmit1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Submit"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmit1ActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnReset1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Reset"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblLastName_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="LAST NAME:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblMInitial_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="MIDDLE INITIAL:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblEmail_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="EMAIL:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPassword_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="PASSWORD:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblAddress1_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ADDRESS 1:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblAddress2_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ADDRESS 2:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCity_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="CITY:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblState_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="STATE:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblZip_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ZIP:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtFirstName_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtMInitial_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtLastName_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAddress1_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAddress2_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtCity_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtState_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtZip_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEmail_A">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPassword_A">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSubmit_A">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmit_AActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnReset_A">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reset"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPhone_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="PHONE:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPhone_A">
+            </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel1">
+        <Container class="javax.swing.JPanel" name="jPanel_B">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -339,48 +325,50 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="lblZip" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblState" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblCity" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblAddress2" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblAddress1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblMInitial" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblFirstName" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblLastName" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblZip1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblState1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCity1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAddress4" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAddress3" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMInitial1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFirstName1" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLastName1" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtState" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="txtZip" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtState1" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtMInitial" min="-2" pref="23" max="-2" attributes="0"/>
-                                  <Component id="txtLastName" max="32767" attributes="0"/>
-                                  <Component id="txtAddress1" max="32767" attributes="0"/>
-                                  <Component id="txtAddress2" max="32767" attributes="0"/>
-                                  <Component id="txtCity" pref="231" max="32767" attributes="0"/>
-                                  <Component id="txtFirstName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtMInitial1" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="txtLastName1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtAddress3" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtAddress4" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtCity1" alignment="0" pref="231" max="32767" attributes="0"/>
+                                  <Component id="txtFirstName1" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="197" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="lblPassword" min="-2" max="-2" attributes="0"/>
-                                          <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblPassword1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblEmail1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="txtEmail" max="32767" attributes="0"/>
-                                          <Component id="txtPassword" pref="231" max="32767" attributes="0"/>
+                                          <Component id="txtEmail1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtPassword2" alignment="0" pref="231" max="32767" attributes="0"/>
+                                          <Component id="jTextField2" alignment="0" min="-2" pref="126" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="btnSubmit" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="btnSubmit2" min="-2" pref="118" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                      <Component id="btnReset" min="-2" pref="118" max="-2" attributes="0"/>
+                                      <Component id="btnReset2" min="-2" pref="118" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
+                          <Component id="txtZip1" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="192" max="32767" attributes="0"/>
                   </Group>
@@ -391,57 +379,62 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblFirstName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtFirstName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFirstName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEmail1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFirstName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEmail1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblMInitial" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblPassword" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtMInitial" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMInitial1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPassword1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMInitial1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPassword2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblLastName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtLastName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLastName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtLastName1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblAddress1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtAddress1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblAddress3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAddress3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblAddress2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtAddress2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAddress4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAddress4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnSubmit" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                          <Component id="btnReset" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="lblCity1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCity1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSubmit2" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="btnReset2" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblState" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtState" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblState1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtState1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblZip" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtZip" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblZip1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtZip1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="93" max="32767" attributes="0"/>
+                      <EmptySpace pref="89" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblFirstName">
+            <Component class="javax.swing.JLabel" name="lblFirstName1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -449,7 +442,7 @@
                 <Property name="text" type="java.lang.String" value="FIRST NAME:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblLastName">
+            <Component class="javax.swing.JLabel" name="lblLastName1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -457,7 +450,7 @@
                 <Property name="text" type="java.lang.String" value="LAST NAME:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblMInitial">
+            <Component class="javax.swing.JLabel" name="lblMInitial1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -465,7 +458,7 @@
                 <Property name="text" type="java.lang.String" value="MIDDLE INITIAL:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblEmail">
+            <Component class="javax.swing.JLabel" name="lblEmail1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -473,7 +466,7 @@
                 <Property name="text" type="java.lang.String" value="EMAIL:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPassword">
+            <Component class="javax.swing.JLabel" name="lblPassword1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -481,7 +474,7 @@
                 <Property name="text" type="java.lang.String" value="PASSWORD:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblAddress1">
+            <Component class="javax.swing.JLabel" name="lblAddress3">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -489,7 +482,7 @@
                 <Property name="text" type="java.lang.String" value="ADDRESS 1:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblAddress2">
+            <Component class="javax.swing.JLabel" name="lblAddress4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -497,7 +490,7 @@
                 <Property name="text" type="java.lang.String" value="ADDRESS 2:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblCity">
+            <Component class="javax.swing.JLabel" name="lblCity1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -505,7 +498,7 @@
                 <Property name="text" type="java.lang.String" value="CITY:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblState">
+            <Component class="javax.swing.JLabel" name="lblState1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -513,7 +506,7 @@
                 <Property name="text" type="java.lang.String" value="STATE:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblZip">
+            <Component class="javax.swing.JLabel" name="lblZip1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="14" style="0"/>
@@ -521,37 +514,50 @@
                 <Property name="text" type="java.lang.String" value="ZIP:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="txtFirstName">
+            <Component class="javax.swing.JTextField" name="txtFirstName1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtMInitial">
+            <Component class="javax.swing.JTextField" name="txtMInitial1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtLastName">
+            <Component class="javax.swing.JTextField" name="txtLastName1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtAddress1">
+            <Component class="javax.swing.JTextField" name="txtAddress3">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtAddress2">
+            <Component class="javax.swing.JTextField" name="txtAddress4">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtCity">
+            <Component class="javax.swing.JTextField" name="txtCity1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtState">
+            <Component class="javax.swing.JTextField" name="txtState1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtZip">
+            <Component class="javax.swing.JTextField" name="txtZip1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtEmail">
+            <Component class="javax.swing.JTextField" name="txtEmail1">
             </Component>
-            <Component class="javax.swing.JTextField" name="txtPassword">
+            <Component class="javax.swing.JTextField" name="txtPassword2">
             </Component>
-            <Component class="javax.swing.JButton" name="btnSubmit">
+            <Component class="javax.swing.JButton" name="btnSubmit2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Submit"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmitActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmit2ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="btnReset">
+            <Component class="javax.swing.JButton" name="btnReset2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Reset"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Times New Roman" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="PHONE:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextField2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
               </Properties>
             </Component>
           </SubComponents>
