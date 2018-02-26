@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui_forms;
 
 /**
  *
@@ -140,6 +139,11 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
 
         btnSubmit_A.setText("Submit");
         btnSubmit_A.setNextFocusableComponent(btnReset_A);
+        btnSubmit_A.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnSubmit_AMousePressed(evt);
+            }
+        });
         btnSubmit_A.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmit_AActionPerformed(evt);
@@ -449,6 +453,28 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
         txtPassword_A.setText("");
         txtPhone_A.setText("");
     }//GEN-LAST:event_btnReset_AMousePressed
+
+    private void btnSubmit_AMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmit_AMousePressed
+        
+        char mInitial = (txtMInitial_A.getText()).charAt(0);
+        
+        Customer addCustomer = new Customer(txtEmail_A.getText(), txtPassword_A.getText(), txtPhone_A.getText(), 
+                                            txtFirstName_A.getText(), mInitial, txtLastName_A.getText(), txtAddress1_A.getText(),
+                                            txtAddress2_A.getText(), txtCity_A.getText(), txtState_A.getText(), txtZip_A.getText());
+        
+        txtFirstName_A.setText("");
+        txtMInitial_A.setText("");
+        txtLastName_A.setText("");
+        txtAddress1_A.setText("");
+        txtAddress2_A.setText("");
+        txtCity_A.setText("");
+        txtState_A.setText("");
+        txtZip_A.setText("");
+        txtEmail_A.setText("");
+        txtPassword_A.setText("");
+        txtPhone_A.setText("");
+        
+    }//GEN-LAST:event_btnSubmit_AMousePressed
 
     /**
      * @param args the command line arguments

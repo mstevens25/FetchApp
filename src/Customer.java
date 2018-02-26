@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package objects;
+
 
 /**
  *
@@ -24,9 +24,8 @@ public class Customer {
                    zip;
     private char middleInitial;
     
-    public Customer(int customerID, String email, String pass, String phone, String firstName, char middleInitial,
-                    String lastName, String addressLine1, String addressLine2, String city, String state, String zip) {
-        this.customerID = customerID;
+    public Customer(String email, String pass, String phone, String firstName, char middleInitial,
+                    String lastName, String addressLine1, String addressLine2, String city, String state, String zip) {       
         this.email = email;
         this.pass = pass;
         this.phone = phone;
