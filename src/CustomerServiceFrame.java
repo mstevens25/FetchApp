@@ -456,10 +456,8 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
 
     private void btnSubmit_AMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmit_AMousePressed
         
-        char mInitial = (txtMInitial_A.getText()).charAt(0);
-        
         Customer addCustomer = new Customer(txtEmail_A.getText(), txtPassword_A.getText(), txtPhone_A.getText(), 
-                                            txtFirstName_A.getText(), mInitial, txtLastName_A.getText(), txtAddress1_A.getText(),
+                                            txtFirstName_A.getText(), txtMInitial_A.getText(), txtLastName_A.getText(), txtAddress1_A.getText(),
                                             txtAddress2_A.getText(), txtCity_A.getText(), txtState_A.getText(), txtZip_A.getText());
         
         txtFirstName_A.setText("");

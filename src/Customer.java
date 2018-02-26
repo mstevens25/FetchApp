@@ -16,15 +16,15 @@ public class Customer {
                    pass,
                    phone,
                    firstName,
+                   middleInitial,
                    lastName,
                    addressLine1,
                    addressLine2,
                    city,
                    state,
                    zip;
-    private char middleInitial;
     
-    public Customer(String email, String pass, String phone, String firstName, char middleInitial,
+    public Customer(String email, String pass, String phone, String firstName, String middleInitial,
                     String lastName, String addressLine1, String addressLine2, String city, String state, String zip) {       
         this.email = email;
         this.pass = pass;
@@ -44,7 +44,7 @@ public class Customer {
     public String getpass() { return pass; }
     public String getphone() { return phone; }
     public String getfirstName() { return firstName; }
-    public char getmiddleInitial() { return middleInitial; }
+    public String getmiddleInitial() { return middleInitial; }
     public String getlastName() { return lastName; }
     public String getaddressLine1() { return addressLine1; }
     public String getaddressLine2() { return addressLine2; }
@@ -57,7 +57,7 @@ public class Customer {
     public void setpass(String pass) { this.pass = pass; }
     public void setphone(String phone) { this.phone = phone; }
     public void setfirstName(String firstName) { this.firstName = firstName; }
-    public void setmiddleInitial(char middleInitial) { this.middleInitial = middleInitial; }
+    public void setmiddleInitial(String middleInitial) { this.middleInitial = middleInitial; }
     public void setlastName(String lastName) { this.lastName = lastName; }
     public void setaddressLine1(String addressLine1) { this.addressLine1 = addressLine1; }
     public void setaddressLine2(String addressLine2) { this.addressLine2 = addressLine2; }
