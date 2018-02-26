@@ -460,6 +460,7 @@ public class CustomerServiceFrame extends javax.swing.JFrame {
                                             txtFirstName_A.getText(), txtMInitial_A.getText(), txtLastName_A.getText(), txtAddress1_A.getText(),
                                             txtAddress2_A.getText(), txtCity_A.getText(), txtState_A.getText(), txtZip_A.getText());
         
+        
         txtFirstName_A.setText("");
         txtMInitial_A.setText("");
         txtLastName_A.setText("");
