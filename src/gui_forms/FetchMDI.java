@@ -56,8 +56,10 @@ public class FetchMDI extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(1600, 900));
 
+        desktopPane.setBackground(new java.awt.Color(102, 204, 0));
+
         lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(51, 153, 0));
+        lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.setText("Fetch Mobile Grooming");
         desktopPane.add(lblTitle);
         lblTitle.setBounds(100, 60, 580, 90);
@@ -74,13 +76,13 @@ public class FetchMDI extends javax.swing.JFrame {
         spnlNewsFeed.setBounds(780, 90, 330, 430);
 
         lblPassword.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblPassword.setForeground(new java.awt.Color(51, 153, 0));
+        lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setText("PASSWORD:");
         desktopPane.add(lblPassword);
         lblPassword.setBounds(140, 240, 100, 30);
 
         lblUsername.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        lblUsername.setForeground(new java.awt.Color(51, 153, 0));
+        lblUsername.setForeground(new java.awt.Color(255, 255, 255));
         lblUsername.setText("USERNAME:");
         desktopPane.add(lblUsername);
         lblUsername.setBounds(140, 200, 100, 30);
