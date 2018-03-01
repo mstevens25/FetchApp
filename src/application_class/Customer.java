@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package application_class;
 
-
+import java.sql.*;
 /**
  *
  * @author mattm
@@ -38,6 +39,7 @@ public class Customer {
         this.state = state;
         this.zip = zip;
     }
+       
                
     public int getcustomerID() { return customerID; }
     public String getemail() { return email; }
@@ -65,6 +67,34 @@ public class Customer {
     public void setstate(String state) { this.state = state; }
     public void setzip(String zip) { this.zip = zip; }
     
+    
+    public static void addCustomer(Customer cust) {
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fetchdb", "root", "mysqlpw");
+            PreparedStatement stmt = conn.prepareStatement("insert into customer"
+                +    " (email, pass, phone, firstName, middleInitial, lastName, addressLine1, addressLine2, city, state, zip)"
+                +    " values (?,?,?,?,?,?,?,?,?,?,?)");
+            
+            stmt.setString(1, cust.getemail());
+            stmt.setString(2, cust.getpass());
+            stmt.setString(3, cust.getphone());
+            stmt.setString(4, cust.getfirstName());
+            stmt.setString(5, cust.getmiddleInitial());
+            stmt.setString(6, cust.getlastName());
+            stmt.setString(7, cust.getaddressLine1());
+            stmt.setString(8, cust.getaddressLine2());
+            stmt.setString(9, cust.getcity());
+            stmt.setString(10, cust.getstate());
+            stmt.setString(11, cust.getzip());
+            
+            stmt.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return;
+        }  
+    }
 }
     
     

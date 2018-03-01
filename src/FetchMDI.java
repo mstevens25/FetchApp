@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import menus.Customer_Service;
 
 /**
  *
@@ -53,16 +53,22 @@ public class FetchMDI extends javax.swing.JFrame {
         aboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(800, 400));
+        setPreferredSize(new java.awt.Dimension(1600, 900));
         setSize(new java.awt.Dimension(1600, 900));
 
         desktopPane.setBackground(new java.awt.Color(102, 204, 0));
+        desktopPane.setMaximumSize(new java.awt.Dimension(1680, 1050));
+        desktopPane.setMinimumSize(new java.awt.Dimension(800, 400));
 
-        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Times New Roman", 1, 64)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("Fetch Mobile Grooming");
+        lblTitle.setText("  Fetch Mobile Grooming");
+        lblTitle.setAlignmentY(0.0F);
+        lblTitle.setBorder(javax.swing.BorderFactory.createMatteBorder(15, 15, 15, 15, new java.awt.Color(51, 153, 0)));
         desktopPane.add(lblTitle);
-        lblTitle.setBounds(100, 60, 580, 90);
+        lblTitle.setBounds(100, 60, 760, 180);
 
         jTextArea1.setBackground(new java.awt.Color(102, 102, 102));
         jTextArea1.setColumns(20);
@@ -70,22 +76,23 @@ public class FetchMDI extends javax.swing.JFrame {
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
         jTextArea1.setText("Company News Feed Will Be here");
+        jTextArea1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(51, 153, 0), new java.awt.Color(102, 255, 102)));
         spnlNewsFeed.setViewportView(jTextArea1);
 
         desktopPane.add(spnlNewsFeed);
-        spnlNewsFeed.setBounds(780, 90, 330, 430);
+        spnlNewsFeed.setBounds(970, 60, 510, 690);
 
         lblPassword.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setText("PASSWORD:");
         desktopPane.add(lblPassword);
-        lblPassword.setBounds(140, 240, 100, 30);
+        lblPassword.setBounds(290, 400, 100, 30);
 
         lblUsername.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblUsername.setForeground(new java.awt.Color(255, 255, 255));
         lblUsername.setText("USERNAME:");
         desktopPane.add(lblUsername);
-        lblUsername.setBounds(140, 200, 100, 30);
+        lblUsername.setBounds(290, 320, 100, 30);
 
         pwtxtPassword.setBackground(new java.awt.Color(204, 204, 204));
         pwtxtPassword.addActionListener(new java.awt.event.ActionListener() {
@@ -94,7 +101,7 @@ public class FetchMDI extends javax.swing.JFrame {
             }
         });
         desktopPane.add(pwtxtPassword);
-        pwtxtPassword.setBounds(260, 240, 340, 30);
+        pwtxtPassword.setBounds(410, 400, 340, 30);
 
         txtUsername.setBackground(new java.awt.Color(204, 204, 204));
         txtUsername.setText("    Email");
@@ -112,7 +119,7 @@ public class FetchMDI extends javax.swing.JFrame {
             }
         });
         desktopPane.add(txtUsername);
-        txtUsername.setBounds(260, 200, 340, 30);
+        txtUsername.setBounds(410, 320, 340, 30);
 
         btnLogin.setText("Login");
         btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -124,7 +131,7 @@ public class FetchMDI extends javax.swing.JFrame {
             }
         });
         desktopPane.add(btnLogin);
-        btnLogin.setBounds(210, 330, 100, 40);
+        btnLogin.setBounds(340, 550, 100, 40);
 
         btnReset.setText("Reset");
         btnReset.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -138,7 +145,7 @@ public class FetchMDI extends javax.swing.JFrame {
             }
         });
         desktopPane.add(btnReset);
-        btnReset.setBounds(350, 330, 100, 40);
+        btnReset.setBounds(520, 550, 100, 40);
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -207,11 +214,11 @@ public class FetchMDI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1200, Short.MAX_VALUE)
+            .addComponent(desktopPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1600, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
         );
 
         pack();
@@ -235,11 +242,11 @@ public class FetchMDI extends javax.swing.JFrame {
     }//GEN-LAST:event_txtUsernameActionPerformed
 
     private void txtUsernameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsernameMouseClicked
-        txtUsername.setText("");
+        
     }//GEN-LAST:event_txtUsernameMouseClicked
 
     private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
-        new CustomerServiceFrame().setVisible(true);
+        
     }//GEN-LAST:event_btnLoginMouseClicked
 
     private void btnResetMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMousePressed
@@ -248,7 +255,11 @@ public class FetchMDI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnResetMousePressed
 
     private void btnLoginMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMousePressed
-        new CustomerServiceFrame().setVisible(true);
+        Customer_Service cs1 = new Customer_Service();
+        cs1.setLocation(10, 10);
+        cs1.setSize(1366, 768);
+        cs1.setVisible(true);
+        this.add(cs1);
     }//GEN-LAST:event_btnLoginMousePressed
 
     private void txtUsernameMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsernameMousePressed
